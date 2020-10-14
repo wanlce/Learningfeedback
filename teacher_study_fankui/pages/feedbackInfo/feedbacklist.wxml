@@ -1,0 +1,90 @@
+<!--pages/admin/addcourse/add.wxml-->
+<view class="container">
+	<view class="feedback_header">
+		<view class="feedback_header_ul">
+			<view class="feedback_header_li" bindtap="feedbackType">
+				<view>{{feedbackTypeName}}</view>
+				<image src="../../images/down.png"></image>
+			</view>
+			<view class="feedback_header_li"  bindtap="feedbacklabel" >
+				<view >{{feedbacklabel}}</view>
+				<image src="../../images/down.png"></image>
+			</view>
+		</view>
+		<view class="feedback_header_rili" bindtap="selectRili" >
+			<image src="../../images/my/rili.png"></image>
+		</view>
+	</view>
+	<view class="list_info">
+		<view class="list_header">
+			<view>{{currentDate}}</view>
+			<view>20条</view>
+		</view>
+		<view class="list_con">
+			<view class="list_con_li" data-id='1' bindtap="feedbackDetail">
+				<view class="list_con_li_left">
+					<view class="list_con_li_left_title">反馈信息</view>
+					<view class="list_con_li_left_time">10:28</view>
+				</view>
+				<view class="navigator-arrow"></view>
+			</view>
+			<view class="list_con_li" data-id='1' bindtap="feedbackDetail">
+				<view class="list_con_li_left">
+					<view class="list_con_li_left_title">反馈信息</view>
+					<view class="list_con_li_left_time">10:28</view>
+				</view>
+				<view class="navigator-arrow"></view>
+			</view>
+			<view class="list_con_li" data-id='1' bindtap="feedbackDetail">
+				<view class="list_con_li_left">
+					<view class="list_con_li_left_title">反馈信息</view>
+					<view class="list_con_li_left_time">10:28</view>
+				</view>
+				<view class="navigator-arrow"></view>
+			</view>
+			<view class="list_con_li" data-id='1' bindtap="feedbackDetail">
+				<view class="list_con_li_left">
+					<view class="list_con_li_left_title">反馈信息</view>
+					<view class="list_con_li_left_time">10:28</view>
+				</view>
+				<view class="navigator-arrow"></view>
+			</view>
+			<view class="list_con_li" data-id='1' bindtap="feedbackDetail">
+				<view class="list_con_li_left">
+					<view class="list_con_li_left_title">反馈信息</view>
+					<view class="list_con_li_left_time">10:28</view>
+				</view>
+				<view class="navigator-arrow"></view>
+			</view>
+			<view class="list_con_li" data-id='1' bindtap="feedbackDetail">
+				<view class="list_con_li_left">
+					<view class="list_con_li_left_title">反馈信息</view>
+					<view class="list_con_li_left_time">10:28</view>
+				</view>
+				<view class="navigator-arrow"></view>
+			</view>
+		</view>
+	</view>
+	
+	<!-- <block wx:for-items="{{list}}" wx:key="{{item.id}}">
+	  <view class="kind-list-item">
+	    <view id="{{item.id}}" class="kind-list-item-hd {{item.open ? 'kind-list-item-hd-show' : ''}}" bindtap="kindToggle">
+	      <view class="kind-list-text">{{item.name}}</view>
+	    </view>
+	    <view class="kind-list-item-bd {{item.open ? 'kind-list-item-bd-show' : ''}}">
+	      <view class="navigator-box {{item.open ? 'navigator-box-show' : ''}}">
+	        <block wx:for-items="{{item.pages}}" wx:for-item="page" wx:key="*item">
+	          <navigator url="pages/{{page}}/{{page}}" class="navigator">
+				<view class="navigator-text-box">
+					<view class="navigator-text">{{page}}</view>
+					<view class="navigator-text">{{page}}</view>
+				</view>
+	            
+	            <view class="navigator-arrow"></view>
+	          </navigator>
+	        </block>
+	      </view>
+	    </view>
+	  </view>
+	</block> -->
+</view>

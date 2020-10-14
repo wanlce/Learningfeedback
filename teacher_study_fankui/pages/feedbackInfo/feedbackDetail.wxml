@@ -1,0 +1,17 @@
+<!--pages/admin/addcourse/add.wxml-->
+<view class="container">
+	<view class="list_info">
+		<view class="info_detail">我节课讲的还是特别不错，感谢老师</view>
+		<view class="info_ul">
+			<view class="info_li">
+				<view class="info_li_lable">反馈时间</view>
+				<view class="info_li_val">2019-07-16 20:31:23</view>
+			</view>
+			<view class="info_li">
+				<view class="info_li_lable">反馈类型</view>
+				<view class="info_li_val">教师反馈</view>
+			</view>
+		</view>
+		<view class="backFeedback" bindtap="backFeedback">返回反馈列表</view>
+	</view>
+</view>

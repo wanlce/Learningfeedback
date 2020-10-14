@@ -1,0 +1,12 @@
+/* pages/admin/addcourse/add.wxss */
+.container{
+    padding: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    border-shadow: 1px 1px #0099CC;
+}
+
+.calendarBox{
+	background-color:#fff;
+	box-shadow: 1px 1px 10px #ccc;
+}

@@ -1,0 +1,6 @@
+<!--pages/admin/addcourse/add.wxml-->
+<view class="container">
+	<view class="calendarBox" wx:if="{{year}}">
+		<calendar  bindOnDayClick="onDayClick" selectedDate='{{selectDate}}' year="{{year}}" month="{{month}}"/>
+	</view>
+</view>

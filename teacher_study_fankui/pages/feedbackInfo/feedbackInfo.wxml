@@ -1,0 +1,12 @@
+<!--pages/admin/addcourse/add.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit">
+        <view class="row1">
+            <textarea class='textarea' style="min-height:300rpx;color:black;box-shadow:0 0 20rpx #ccc;" placeholder="请输入反馈内容"  maxlength= '-1' auto-height  type="" focus="true" />
+        </view>  
+        <view class="row">
+            <button type="primary" form-type="submit">添加</button>
+            <button type="primary" form-type="reset">重置</button>
+        </view>
+  </form>
+</view>

@@ -1,0 +1,37 @@
+<view class="top">
+  <view wx:for="{{['一','二','三','四','五','六','日']}}"  wx:key="key" class="top-text">周{{item}}</view>
+</view>
+<scroll-view scroll-y="true" class="scroll">
+  <view class='main'>
+     <view class='main-left'>
+      <view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12]}}" wx:key="key" class="left">
+        {{item}}
+      </view>
+    </view>
+	
+     <!-- 红线 -->
+     <view wx:for="{{classNum}}" wx:for-item="itemName" wx:key="key" >  
+		  <view bindtap="onViewClick123" data-id="1" data-indexval="{{itemName}}" style="width:100rpx;padding-top:100rpx;position: absolute;border-bottom:1rpx solid {{index==3?'red':'lightgray'}};margin-top:{{(index)*100}}rpx;">
+		  </view>
+		   <view bindtap="onViewClick123" data-id="2" data-indexval="{{itemName}}" style="width:100rpx;margin-top:{{(index)*100}}rpx;padding-top:100rpx;left:{{(0+1)*100}}rpx;  position: absolute;border-bottom:1rpx solid {{index==3?'red':'lightgray'}};">
+		  </view>
+		   <view bindtap="onViewClick123" data-id="3" data-indexval="{{itemName}}" style="width:100rpx;margin-top:{{(index)*100}}rpx;padding-top:100rpx;left:{{(1+1)*100}}rpx;  position: absolute;border-bottom:1rpx solid {{index==3?'red':'lightgray'}};">
+		  </view>
+		   <view bindtap="onViewClick123" data-id="4" data-indexval="{{itemName}}" style="width:100rpx;margin-top:{{(index)*100}}rpx;padding-top:100rpx;left:{{(2+1)*100}}rpx;  position: absolute;border-bottom:1rpx solid {{index==3?'red':'lightgray'}};">
+		  </view>
+		   <view bindtap="onViewClick123" data-id="5" data-indexval="{{itemName}}" style="width:100rpx;margin-top:{{(index)*100}}rpx;padding-top:100rpx;left:{{(3+1)*100}}rpx;  position: absolute;border-bottom:1rpx solid {{index==3?'red':'lightgray'}};">
+		  </view>
+		   <view bindtap="onViewClick123" data-id="6" data-indexval="{{itemName}}" style="width:100rpx;margin-top:{{(index)*100}}rpx;padding-top:100rpx;left:{{(4+1)*100}}rpx;  position: absolute;border-bottom:1rpx solid {{index==3?'red':'lightgray'}};">
+		  </view>
+		   <view bindtap="onViewClick123" data-id="7" data-indexval="{{itemName}}" style="width:100rpx;margin-top:{{(index)*100}}rpx;padding-top:100rpx; left:{{(5+1)*100}}rpx; position: absolute;border-bottom:1rpx solid {{index==3?'red':'lightgray'}};">
+		  </view>
+    </view> 
+
+    <!--课表-->
+    <view wx:for="{{wlist}}" wx:key="" >
+      <view class="flex-item kcb-item" bindtap="onViewClick" data-statu="open" data-index="{{index}}" style="margin-left:{{(item.xqj-1)*100}}rpx;margin-top:{{(item.skjc-1)*100+5}}rpx;height:{{item.skcd*100-5}}rpx;background-color:black">
+        <view class="smalltext" >{{item.kcmc}}@{{item.classroom}}@{{item.teacherid}}</view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

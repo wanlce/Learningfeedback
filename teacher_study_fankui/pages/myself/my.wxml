@@ -1,0 +1,18 @@
+<view class="container">
+  <image bindtap="bindViewTap" class="userinfo-avatar" src="../../DaChuangDemo/images/logo_81_81.png" background-size="cover"               style="display: {{userInfo.avatarUrl ? 'none' : ''}}"></image>
+  <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"
+  style="display: {{userInfo.avatarUrl ? '' : 'none'}}"></image> 
+  <!-- <text class="userinfo-nickname" style="display: {{userInfo.nickName ? 'none' : ''}}">名称</text> -->
+   <text class="userinfo-nickname" bindtap="logout">退出登录</text>
+ <!-- <text class="userinfo-nickname" style="display: {{userInfo.nickName ? '' : 'none'}}">{{userInfo.nickName}}</text>-->
+  <block wx:for-items="{{list}}" wx:key="*item">
+    <view data-url="{{item.page}}" class="navigator" hover-class="ac-view" bindtap='gopage' style="display: {{item.show ? '' : 'none'}}">
+      <view class='imgwrr'><image src="{{item.image}}" class='icon'></image></view>
+      <view class="navigator-text">{{item.name}}</view>
+      <view class="navigator-arrow"></view>
+    </view>
+  </block>
+</view>
+
+
+

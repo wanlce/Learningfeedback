@@ -1,0 +1,58 @@
+.top {
+  display: flex;
+  flex-direction: row;
+  margin-left: 35rpx;
+  background-color: #fff;
+  color: balck;
+}
+.main
+{
+  height:1200rpx;
+  width:730rpx;
+  display:flex;
+}
+.top-text {
+  width: 100rpx;
+  height: 35rpx;
+  font-size: 9pt;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.main-left
+{
+  background-color:#fff;
+  color:black;
+}
+.left {
+  width: 35rpx;
+  height: 100rpx;
+  font-size: 9pt;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.flex-item {
+  width: 95rpx;
+  height: 100px;
+}
+
+.kcb-item {
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.smalltext {
+  font-size: 8pt;
+  color: #fff;
+  padding-left: 2px;
+}
+.scroll {
+  height: 1170rpx;
+  z-index: 101;
+  position: fixed;
+}

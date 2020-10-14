@@ -1,0 +1,161 @@
+<view class="page__hd">
+  <image class="weui-media-box__thumb" src="/images/core/feedback.png" />
+  <view class="page__title">教学反馈</view>
+  <view class="page__desc">反馈结果会影响同学和老师的评选，请大家如实反馈</view>
+  <view class="weui-panel border-shadow">
+    <view class="weui-panel__bd">
+      <view class="weui-navbar">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 第一个view结束 -->
+<view class="page__bd">
+  <view class="weui-tab">
+    <view class="weui-tab__panel">
+      <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+        <view class="weui-cells">
+         <view class="weui-cell weui-cell_select">
+            <view class="weui-cell__hd weui-cell__hd_in-select-after">
+              <view class="weui-label">系别</view>
+            </view>
+            <view class="weui-cell__bd">
+              <picker name="teacherDept" value="{{deptIndex}}" bindchange="teacherDeptPicker" range="{{dept}}">
+                <view class="weui-select weui-select_in-select-after">{{dept[deptIndex]}}</view>
+              </picker>
+            </view>
+          </view>
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">课程名称</view>
+            </view>
+            <view class="weui-cell__bd">
+              <input class="weui-input" placeholder="例如：数据结构" value="{{className}}" bindinput="classNameInput" />
+            </view>
+          </view>
+        </view>
+        <view class="weui-cells">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">教师姓名</view>
+            </view>
+            <view class="weui-cell__bd">
+              <input class="weui-input" placeholder="例如：张三" value="{{teacherName}}" bindinput="teacherNameInput" />
+            </view>
+          </view>
+        </view>
+        <view class="weui-cells">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">上课时间</view>
+            </view>
+            <view class="weui-cell__bd">
+              <input class="weui-input" placeholder="例如：周三，34节" value="{{classTime}}" bindinput="classTimeInput" />
+            </view>
+          </view>
+        </view>
+        <view class="weui-cells">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">上课地点</view>
+            </view>
+            <view class="weui-cell__bd">
+              <input class="weui-input" placeholder="例如：综合楼3304" value="{{classWhere}}" bindinput="classWhereInput" />
+            </view>
+          </view>
+        </view>
+        <view class="weui-cells">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">反馈内容</view>
+            </view>
+            <view class="weui-cell__bd">
+              <input class="weui-input" placeholder="例如：老师的授课进度太快" value="{{feedBack}}" bindinput="feedBackInput" />
+            </view>
+          </view>
+        </view>
+        <!--  -->
+        <!-- <view class="weui-cells__tips">* 不知道所在班级？
+          <navigator url="/pages/search/id/index" class="click-search">点此查询</navigator>
+        </view> -->
+        <view class="button-sp-area">
+          <button bindtap="submit" class="weui-btn" type="primary" plain="true">提交</button>
+          <button bindtap="niMingFB" class="weui-btn" type="default" plain="true">匿名反馈</button>
+        </view>
+      </view>
+      <!-- 学生反馈结束 -->
+
+      <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+        <view class="weui-cells">
+          <view class="weui-cell weui-cell_select">
+            <view class="weui-cell__hd weui-cell__hd_in-select-after">
+              <view class="weui-label">系别</view>
+            </view>
+            <view class="weui-cell__bd">
+              <picker name="teacherDept" value="{{deptIndex}}" bindchange="teacherDeptPicker" range="{{dept}}">
+                <view class="weui-select weui-select_in-select-after">{{dept[deptIndex]}}</view>
+              </picker>
+            </view>
+          </view>
+          <!--  -->
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">学生学号</view>
+            </view>
+            <view class="weui-cell__bd">
+              <input class="weui-input" placeholder="例如：1710250000" value="{{stuNo}}" bindinput="stuNoInput" />
+            </view>
+          </view>
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">学生姓名</view>
+            </view>
+            <view class="weui-cell__bd">
+              <input class="weui-input" placeholder="例如：张三" value="{{stuName}}" bindinput="stuNameInput" />
+            </view>
+          </view>
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">教授课程名</view>
+            </view>
+            <view class="weui-cell__bd">
+              <input class="weui-input" placeholder="例如：数据库" value="{{teacherName}}" bindinput="teacherNameInput" />
+            </view>
+          </view>
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">上课时间</view>
+            </view>
+            <view class="weui-cell__bd">
+              <input class="weui-input" placeholder="例如：周三，78节" value="{{classTime}}" bindinput="classTimeInput" />
+            </view>
+          </view>
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">上课地点</view>
+            </view>
+            <view class="weui-cell__bd">
+              <input class="weui-input" placeholder="例如：综合楼3304" value="{{classWhere}}" bindinput="classWhereInput" />
+            </view>
+          </view><view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">反馈内容</view>
+            </view>
+            <view class="weui-cell__bd">
+              <input class="weui-input" placeholder="例如：上课玩手机" value="{{feedBack}}" bindinput="feedBackInput" />
+            </view>
+          </view>
+          <!--  -->
+        </view>
+        <view class="button-sp-area">
+          <button bindtap="submit" class="weui-btn" type="primary" plain="true">提交</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

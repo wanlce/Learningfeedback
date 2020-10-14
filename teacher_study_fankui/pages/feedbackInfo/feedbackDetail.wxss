@@ -1,0 +1,52 @@
+/* pages/admin/addcourse/add.wxss */
+page {
+  background-color: #f4f4f4;
+} 
+.container{
+    padding: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    border-shadow: 1px 1px #0099CC;
+	justify-content: flex-start;
+	align-items:flex-start;
+}
+
+.list_info{
+	background-color:#fff;
+	border-radius: 20rpx;
+	width:100%;
+	padding-bottom:50rpx;
+}
+
+.info_detail{
+	display:flex;
+	justify-content:center;
+	padding:80rpx 40rpx;
+	font-weight:bold;
+}
+
+.info_ul{
+	margin:0 40rpx ;
+	padding:40rpx 0 70rpx;
+	border-top:1px solid #ececec;
+}
+.info_li{
+	display:flex;
+}
+.info_li_lable{
+	width:30%;
+	color:#b9b9b9;
+	font-size:24rpx;
+}
+.info_li_val{
+	width:70%;
+	color:#191919;
+	font-size:28rpx;
+}
+
+.backFeedback{
+	width:100%;
+	text-align:center;
+	color:#dd9800;
+	font-size:22rpx;
+}

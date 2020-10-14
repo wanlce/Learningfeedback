@@ -1,0 +1,57 @@
+ <view class="swiper-box">   
+      <view class="table main-container">
+  <view class="tr bg-w topBlock">
+    <view class="th">课程号</view>
+    <view class="th">课程名称</view>
+    <view class="th ">教师编号</view>
+    <view class="th ">教师姓名</view>
+    <view class="th ">上课时间</view>
+    <view class="th ">上课地点</view>
+    <view class="th ">操作</view>
+  </view>
+  <view class="bottomBlock">
+    <view class="tr bg-g">
+      <view class="td">001</view>
+      <view class="td">数据库</view>
+      <view class="td">0001</view>
+      <view class="td">张三</view>
+       <view class="td">8:00-10:00</view>
+      <view class="td">综合楼</view>
+      <view class="td" bind:tap='onViewClick' data-id='{{}}'>反馈</view>
+      </view>
+    </view>
+    <view class="bottomBlock">
+    <view class="tr bg-g">
+      <view class="td">002</view>
+      <view class="td">计算机操纵系统</view>
+      <view class="td">0002</view>
+      <view class="td">李四</view>
+      <view class="td">8:00-10:00</view>
+      <view class="td">综合楼</view>
+     <view class="td" bind:tap='onViewClick'>反馈</view>
+      </view>
+    </view>
+    <view class="bottomBlock">
+    <view class="tr bg-g">
+      <view class="td">003</view>
+      <view class="td">计算机组成原理</view>
+      <view class="td">0002</view>
+      <view class="td">李四</view>
+       <view class="td">8:00-10:00</view>
+      <view class="td">综合楼</view>
+      <view class="td" bindtap="onViewClick">反馈</view>
+      </view>
+    </view>
+    <view class="bottomBlock">
+    <view class="tr bg-g">
+      <view class="td">004</view>
+      <view class="td">数据结构</view>
+      <view class="td">0002</view>
+      <view class="td">李四</view>
+       <view class="td">8:00-10:00</view>
+      <view class="td">综合楼</view>      
+      <view class="td" bind:tap="onViewClick">反馈</view>
+      </view>
+    </view>
+  </view>
+</view>

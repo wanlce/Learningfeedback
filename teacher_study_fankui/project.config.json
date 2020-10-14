@@ -1,0 +1,98 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.7",
+	"appid": "wx6df70602e520df6d",
+	"projectname": "test2",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 5,
+			"list": [
+				{
+					"id": 0,
+					"name": "我的",
+					"pathName": "pages/myself/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "反馈日历",
+					"pathName": "pages/feedbackInfo/feedbackrili",
+					"query": "date=2019-09-01",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "反馈列表",
+					"pathName": "pages/feedbackInfo/feedbacklist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "反馈详情",
+					"pathName": "pages/feedbackInfo/feedbackDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "登录",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "课程编辑",
+					"pathName": "pages/feedback/classedit",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

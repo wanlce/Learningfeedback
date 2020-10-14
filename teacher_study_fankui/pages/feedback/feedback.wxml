@@ -1,0 +1,53 @@
+<view class="page__hd">
+  <image class="weui-media-box__thumb" src="/images/core/feedback.png" />
+  <view class="page__title">教学反馈</view>
+  <view class="page__desc">反馈结果会影响同学和老师的评选，请大家如实反馈</view>
+  <view class="weui-panel border-shadow">
+    <view class="weui-panel__bd">
+      <view class="weui-navbar">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 第一个view结束 -->
+<view class="page__bd">
+  <view class="weui-tab">
+    <view class="weui-tab__panel">
+      <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+
+
+  
+        <view class="weui-cells">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd" style="padding:50rpx 0 10rpx;">
+              <textarea style="height:200rpx;"  placeholder="例如：老师的授课进度太快" value="{{feedBack}}" bindinput="feedBackInput" />
+            </view>
+          </view>
+        </view>
+        <view class="button-sp-area">
+          <button bindtap="submit" class="weui-btn submitClass"  type='mytype' hover-class="hover-submitClass" plain="true">提交</button>
+          <button bindtap="niMingFB" class="weui-btn submitClass" type='mytype' hover-class="hover-submitClass"  plain="true">匿名反馈</button>
+        </view>
+      </view>
+      <!-- 学生反馈结束 -->
+
+      <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+        <view class="weui-cells">
+			<view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd" style="padding:50rpx 0 10rpx;">
+              <textarea style="height:200rpx;" placeholder="例如：上课玩手机" value="{{feedBack}}" bindinput="feedBackInput" />
+            </view>
+          </view>
+        </view>
+        <view class="button-sp-area">
+          <button bindtap="submit" class="weui-btn submitClass" type='mytype' hover-class="hover-submitClass"  plain="true">提交</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,67 @@
+// {
+//   "pages": [
+    
+//     "pages/myself/myself",
+//     "pages/index/index",
+
+//     "pages/course/course",
+//     "pages/teacherCourse/teacherCourse",
+//     "pages/feedback/feedback",
+//     "pages/interaction/interaction",
+//     "pages/feedbackInfo/feedbackInfo",
+//     "pages/logs/logs",
+//     "pages/admin/deleteFeedback/delete",
+//     "pages/admin/addFeedback/add",
+//     "pages/admin/teacheradmin/showteacher/showteacher",
+//     "pages/admin/studentadmin/showstudent/showstudent",
+//     "pages/admin/passwordrset/passwordrset",
+//     "pages/admin/teacheradmin/editteacher/editteacher",
+//     "pages/admin/teacheradmin/addteacher/addteacher",
+//     "pages/admin/teacheradmin/deleteteacher/deleteteacher",
+//     "pages/admin/studentadmin/editstudent/editstudent",
+//     "pages/admin/studentadmin/addstudent/addstudent",
+//     "pages/admin/changeFeedback/change",
+//     "pages/admin/core/core",
+//     "pages/admin/studentadmin/deletestudent/deletestudent"
+//   ],
+//   "window": {
+//     "backgroundTextStyle": "light",
+//     "navigationBarBackgroundColor": "#fff",
+//     "navigationBarTitleText": "教学评价反馈",
+//     "navigationBarTextStyle": "black"
+//   },
+//   "tabBar": {
+//     "color": "#8a8a8a",
+//     "selectedColor": "#13227a",
+//     "backgroundColor": "#ccc",
+//     "borderStyle": "black",
+//     "position": "bottom",
+//     "list": [
+//       {
+//         "pagePath": "pages/course/course",
+//         "text": "课程",
+//         "iconPath": "images/tabBar/tabBar1.png",
+//         "selectedIconPath": "images/tabBar/tabBar1_selected.png"
+//       },
+//       {
+//         "pagePath": "pages/interaction/interaction",
+//         "text": "师生互动",
+//         "iconPath": "images/tabBar/tabBar2.png",
+//         "selectedIconPath": "images/tabBar/tabBar2_selected.png"
+//       },
+//       {
+//         "pagePath": "pages/feedback/feedback",
+//         "text": "教学反馈",
+//         "iconPath": "images/tabBar/tabBar3.png",
+//         "selectedIconPath": "images/tabBar/tabBar3_selected.png"
+//       },
+//       {
+//         "pagePath": "pages/myself/myself",
+//         "text": "我的",
+//         "iconPath": "images/tabBar/tabBar4.png",
+//         "selectedIconPath": "images/tabBar/tabBar4_selected.png"
+//       }
+//     ]
+//   },
+//   "sitemapLocation": "sitemap.json"
+// }
